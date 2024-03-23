@@ -1,4 +1,5 @@
 import '../App.css'
+import nils from '../assets/NILS_s.jpg'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         </p>
       </div>
       <div>
-        <img src="/src/assets/NILS_s.jpg"
+        <img src={nils}
         style={{ width: '400px' }}/>
       </div>
     </>
