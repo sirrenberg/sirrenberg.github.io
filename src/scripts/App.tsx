@@ -10,7 +10,7 @@ function App() {
         </p>
       </div>
       <div>
-        <img src="../assets/NILS.jpg"
+        <img src="../src/assets/NILS.jpg"
         style={{ width: '400px' }}/>
       </div>
     </>
