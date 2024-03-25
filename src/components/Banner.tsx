@@ -7,7 +7,7 @@ export const Banner = () => {
     const [headerText, setHeaderText] = useState('');
     const [paragraphText, setParagraphText] = useState('');
     const [writingHeaderText, setWritingHeaderText] = useState(true);
-    const [writingParagraphText, setWritingParagraphText] = useState(true);
+    const [writingParagraphText, setWritingParagraphText] = useState(false);
     const period = 100;
 
     useEffect(() => {
@@ -27,6 +27,7 @@ export const Banner = () => {
         }
         else if (paragraphText.length !== fullParagraphText.length) {
             setWritingHeaderText(false);
+            setWritingParagraphText(true);
             let updatedParagraphText = fullParagraphText.substring(0, paragraphText.length + 1);
             setParagraphText(updatedParagraphText);
         }
