@@ -1,22 +1,14 @@
-import '../App.css'
-import nils from '../assets/NILS_s.jpg'
-import NavBar from '../components/NavBar'
-import '../styles/LandingPage.css'
+import '../App.css';
+import NavBar from '../components/NavBar';
+import { Banner } from '../components/Banner.tsx';
+import '../styles/Default.css';
 
 
 function App() {
   return (
     <div id="home">
       <NavBar />
-      <h1>Nils Sirrenberg</h1>
-      <div>
-        <p>
-          Your expert for Java, C++, Python, SQL and Databases.
-        </p>
-      </div>
-      <div className="image-container">
-        <img src={nils} alt="Nils" />
-      </div>
+      <Banner />
     </div>
   )
 }
