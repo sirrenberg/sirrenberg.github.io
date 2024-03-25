@@ -1,9 +1,14 @@
 .nav-link-div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
   
 .nav-link-img {
     width: 20px;
     margin-right: 10px;
 }
+
+.nav-collapsed {
+    text-align: center;
+  }
