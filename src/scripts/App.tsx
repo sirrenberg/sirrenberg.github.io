@@ -11,12 +11,11 @@ function App() {
       <h1>Nils Sirrenberg</h1>
       <div>
         <p>
-        Your expert for Java, C++, Python, SQL and Databases.
+          Your expert for Java, C++, Python, SQL and Databases.
         </p>
       </div>
-      <div>
-        <img src={nils}
-        style={{ width: '400px' }}/>
+      <div className="image-container">
+        <img src={nils} alt="Nils" />
       </div>
     </div>
   )
