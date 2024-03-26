@@ -30,7 +30,7 @@ function NavBar() {
 
 
   return (
-    <Navbar bg="dark" variant="dark" expand="sm" fixed="top" className={scrolled ? "scrolled" : ""}>
+    <Navbar bg={scrolled ? "dark" : ""} variant="dark" expand="sm" fixed="top" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
