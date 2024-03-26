@@ -22,6 +22,7 @@ nav.navbar {
     transition:  0.32s ease-in-out;
     font-size: 1.5em;
 }
+
 nav.navbar.scrolled {
     background-color: #121212;
     padding: 18px 0;
@@ -30,4 +31,8 @@ nav.navbar.scrolled {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
+}
+
+.nav-link {
+    margin-right: 20px !important;
 }
