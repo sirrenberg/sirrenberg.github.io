@@ -1,11 +1,11 @@
 .nav-link-div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
   
 .nav-link-img {
-    width: 20px;
+    width: 1em;
     margin-right: 10px;
 }
 
@@ -20,6 +20,7 @@ nav.navbar {
     top: 0;
     z-index: 9999;
     transition:  0.32s ease-in-out;
+    font-size: 1.5em;
 }
 nav.navbar.scrolled {
     background-color: #121212;
