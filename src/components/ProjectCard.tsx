@@ -10,7 +10,7 @@ interface ProjectCardProps {
   
 export const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imgUrl, linkToSource }) => {
     return (
-        <Card className="bg-dark text-white" style={{ width: '18rem', height: '30rem' }}>
+        <Card className="bg-dark text-white my-2" style={{ width: '18rem', height: '30rem' }}>
             <Card.Img variant="top" src={imgUrl} />
             <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <Card.Title>{title}</Card.Title>

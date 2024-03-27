@@ -48,7 +48,7 @@ export const Projects = () => {
           {
             projects.map((project, index) => {
               return (
-                <Col xs={12} sm={6} md={4} lg={2} key={index}>
+                <Col xs={12} sm={6} md={5} lg={4} xl={3} xxl={2} key={index}>
                   <ProjectCard {...project}/>
                 </Col>
               )

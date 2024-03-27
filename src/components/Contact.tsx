@@ -6,7 +6,7 @@ export const Contact = () => {
     return (
         <section className="contact" id="contact">
             <div>
-                <Col lg={6}>
+                <Col xs={12} sm={10} md={8} lg={6}>
                 <h2>Let's Connect!</h2>
                 <ContactForm />
                 </Col>

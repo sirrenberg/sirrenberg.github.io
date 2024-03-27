@@ -1,13 +1,13 @@
 .project {
-    background-image: url('../assets/gimp-soft-large-airbrush.png');
-    height: 1080px; /* Adjust as needed */
+    background-image: url('../assets/gimp-soft-large-airbrush-large.png');
+    min-height: 1080px; /* Adjust as needed */
     display: flex; 
     justify-content: center;
 }
 
 .project h2 {
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     font-size: 45px;
     font-weight: 700;
     text-align: center;
