@@ -1,0 +1,44 @@
+.contact {
+    height: 900px;
+    margin-top: 0;
+    padding: 160px 0 100px 0;
+    background-image: url('../assets/contact.jpeg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/************ ContactForm ************/
+
+.form-control{
+    color: black;
+    background-color: rgba(67, 181, 200, 0.5);
+}
+
+.form-control:focus{
+    color: black;
+    background-color: rgba(67, 181, 200, 0.7);
+}
+
+.form-label{
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.left-aligned-form-label{
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.message-form-control{
+    height: 20em;
+}
