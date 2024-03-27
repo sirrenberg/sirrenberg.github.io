@@ -22,7 +22,7 @@ export const Projects = () => {
       linkToSource: "https://github.com/sirrenberg/SoftwareEngineering-WS2024-Caturanga"
     },
     {
-      title: "Btor2-cert",
+      title: "Btor2-Cert",
       description: "A tool to verify the correctness of hardware designs using software analyzers, by translating the hardware design into a software representation. The witness is then validated by a translation back to the hardware design, and validated with a hardware validator.",
       imgUrl: btor2Img,
       linkToSource: "https://www.sosy-lab.org/research/btor2-cert/"
