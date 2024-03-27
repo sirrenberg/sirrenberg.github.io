@@ -27,7 +27,7 @@ function NavBar() {
       sections.forEach(section => {
         const sectionTop = section.offsetTop - 50;
         const sectionHeight = section.clientHeight;
-        const offset = 50;
+        const offset = 150;
         if (window.scrollY + offset>= sectionTop && window.scrollY < sectionTop + sectionHeight) {
           const id = section.getAttribute('id');
           const navLinks = document.querySelectorAll('.nav-link');
@@ -57,7 +57,7 @@ function NavBar() {
           <Nav className='nav-collapsed'>
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/sirrenberg/">Contact</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
             <NavDropdown title="Publications" id="NavBarPublicationsDropdown" menuVariant="dark">
               <NavDropdown.Item href="https://www.sosy-lab.org/research/btor2-cert/">
                 Btor2-Cert: A Certifying Hardware-Verification Framework Using Software Analyzers

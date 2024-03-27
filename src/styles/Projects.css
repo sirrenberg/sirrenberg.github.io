@@ -1,4 +1,20 @@
-.projects {
-    width: 100%; /* Adjust as needed */
-    height: 1500px; /* Adjust as needed */
+.project {
+    background-image: url('../assets/gimp-soft-large-airbrush.png');
+    height: 1080px; /* Adjust as needed */
+    display: flex; 
+    justify-content: center;
+}
+
+.project h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/************ ProjectCard ************/
+
+.invisible-card {
+    visibility: hidden;
 }
