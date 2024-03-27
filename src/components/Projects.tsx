@@ -6,6 +6,7 @@ import wfpImg from "../assets/project-icons/world-food-programme.jpeg";
 import cyberzulImg from "../assets/project-icons/cyberzul.png";
 import "../styles/Projects.css";
 import { ProjectCard } from "./ProjectCard";
+import Container from "react-bootstrap/Container";
 
 export const Projects = () => {
   const projects = [
@@ -44,17 +45,20 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Col size={12}>
         <h2>Discover What I've Built</h2>
-        <Row className="justify-content-center align-items-center">
-          {
-            projects.map((project, index) => {
-              return (
-                <Col xs={12} sm={6} md={5} lg={4} xl={3} xxl={2} key={index}>
-                  <ProjectCard {...project}/>
-                </Col>
-              )
-            })
-          }
-        </Row>
+        <Container fluid style={{ width: "90%"}}>
+          <Row className="d-flex justify-content-around align-items-center">
+            {
+              projects.map((project, index) => {
+                return (
+                  <Col xs={12} sm={6} md={6} lg={4} xl={3} xxl={2} key={index}>
+                    <ProjectCard {...project}/>
+                  </Col>
+                )
+              })
+            }
+
+          </Row>
+        </Container>
       </Col>
     </section>
   );
