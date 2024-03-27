@@ -42,3 +42,10 @@
 .message-form-control{
     height: 20em;
 }
+
+.submit-button{
+    background-color: rgba(67, 181, 200, 0.7);
+    color: white;
+    font-weight: 700;
+    float: left;
+}

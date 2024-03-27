@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import '../styles/Contact.css';
+import Button from 'react-bootstrap/Button';
 
 function TextControlsExample() {
   return (
@@ -15,6 +16,7 @@ function TextControlsExample() {
             <Form.Control className="rounded-0 message-form-control" as="textarea" rows={3} placeholder="Please connect with me via LinkedIn. I didn't have time to set up a mailing Server yet."/>
         </Form.Group>
         </Form>
+        <Button className="rounded-0 submit-button" onClick={() => alert("Please connect with me via LinkedIn. I didn't have time to set up a mailing Server yet.")}>Submit</Button>
     </Container>
   );
 }
