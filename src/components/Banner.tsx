@@ -11,13 +11,11 @@ export const Banner = () => {
     const period = 100;
 
     useEffect(() => {
-        console.log('useEffect ticker');
         let ticker = setInterval(() => tick(ticker), period);
         return () => clearInterval(ticker);
     }, [headerText, paragraphText]);
 
     const tick = (ticker : number) => {
-        console.log('tick');
         let fullHeaderText = "Hi, I am Nils Sirrenberg. Backend developer.";
         let fullParagraphText = "Your expert for Java, C++, Python, SQL and Databases.";
 

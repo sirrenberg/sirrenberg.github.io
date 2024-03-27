@@ -14,11 +14,31 @@ function NavBar() {
 
   useEffect(() => {
     const onScroll = () => {
+
+      // should Navbar be dark or transparent?
       if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
+
+      //which section is currently active?
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 50;
+        const sectionHeight = section.clientHeight;
+        const offset = 50;
+        if (window.scrollY + offset>= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          const id = section.getAttribute('id');
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
     }
 
     window.addEventListener('scroll', onScroll);
@@ -36,6 +56,8 @@ function NavBar() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className='nav-collapsed'>
             <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/sirrenberg/">Contact</Nav.Link>
             <NavDropdown title="Publications" id="NavBarPublicationsDropdown" menuVariant="dark">
               <NavDropdown.Item href="https://www.sosy-lab.org/research/btor2-cert/">
                 Btor2-Cert: A Certifying Hardware-Verification Framework Using Software Analyzers
@@ -53,7 +75,6 @@ function NavBar() {
                 LinkedIn
               </div>
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/sirrenberg/">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
