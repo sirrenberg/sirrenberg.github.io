@@ -84,7 +84,7 @@ function TextControlsExample() {
         </Form.Group>
         <Form.Group className="mb-3 left-aligned-form-label" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Your message</Form.Label>
-            <Form.Control className="rounded-0 message-form-control" as="textarea" rows={3} placeholder="Please connect with me via LinkedIn. I didn't have time to set up a mailing Server yet." onChange={e => setFormState(prevState => ({ ...prevState, message : e.target.value }))}/>
+            <Form.Control className="rounded-0 message-form-control" as="textarea" rows={3} onChange={e => setFormState(prevState => ({ ...prevState, message : e.target.value }))}/>
         </Form.Group>
         <Button className="rounded-0 submit-button" type="submit"><span>{buttonText}</span></Button>
         </Form>
