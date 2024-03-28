@@ -28,7 +28,7 @@ function TextControlsExample() {
     e.preventDefault();
     setButtonText("Sending...");
     try{
-      let response = await fetch("http://138.2.161.235/contact", {
+      let response = await fetch("https://138.2.161.235/contact", {
         method: "POST",
         headers: {"Content-Type": "application/json;charset=utf-8"},
         body: JSON.stringify(formState),
