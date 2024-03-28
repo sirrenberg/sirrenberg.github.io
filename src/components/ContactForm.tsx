@@ -28,7 +28,7 @@ function TextControlsExample() {
     e.preventDefault();
     setButtonText("Sending...");
     try{
-      let response = await fetch("https://138.2.161.235/contact", {
+      let response = await fetch("https://g2ckd7nhkto5qsdeao4j2nguwu.apigateway.eu-frankfurt-1.oci.customer-oci.com/contact", {
         method: "POST",
         headers: {"Content-Type": "application/json;charset=utf-8"},
         body: JSON.stringify(formState),
