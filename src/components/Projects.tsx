@@ -30,7 +30,7 @@ export const Projects = () => {
     },
     {
       title: "Cyberzul",
-      description: "A futuristic adaptation of the board game Azul in Java. Enables the player to play against a computer opponent or against up to 4 human players in the same network or on the same machine.",
+      description: "A futuristic adaptation of the board game Azul in Java. Enables the player to play against a computer opponent or against up to 4 human players in the same network or on the same machine. Due to copyright protection of the original game, we currently do not provide the source code.",
       imgUrl: cyberzulImg,
       linkToSource: ""
     },
