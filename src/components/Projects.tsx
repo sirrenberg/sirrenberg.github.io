@@ -1,4 +1,4 @@
-import { Row, Col } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 import electionImg from "../assets/project-icons/bavarian-state-election-2023.jpeg";
 import btor2Img from "../assets/project-icons/Btor2-cert.jpeg";
 import golImg from "../assets/project-icons/gol.png";
@@ -49,7 +49,7 @@ export const Projects = () => {
           <div className="projectsContainer">
 
             {
-              projects.map((project, index) => {
+              projects.map((project) => {
                 return (
 
                   <ProjectCard  {...project} />
