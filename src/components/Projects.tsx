@@ -45,19 +45,20 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Col size={12}>
         <h2>Discover What I've Built</h2>
-        <Container fluid style={{ width: "90%"}}>
-          <Row className="d-flex justify-content-around align-items-center">
+        <Container fluid style={{ width: "90%" }}>
+          <div className="projectsContainer">
+
             {
               projects.map((project, index) => {
                 return (
-                  <Col xs={12} sm={6} md={6} lg={4} xl={3} xxl={2} key={index}>
-                    <ProjectCard {...project}/>
-                  </Col>
+
+                  <ProjectCard  {...project} />
+
                 )
               })
             }
 
-          </Row>
+          </div>
         </Container>
       </Col>
     </section>
