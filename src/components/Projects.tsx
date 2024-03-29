@@ -38,7 +38,7 @@ export const Projects = () => {
       title: "Game of Life",
       description: "The good old Game of Life. A two-dimensional cellular automaton devised by John Conway. This project was developed in Java, with a Java Swing GUI.",
       imgUrl: golImg,
-      linkToSource: ""
+      linkToSource: "https://github.com/sirrenberg/Game-of-Life"
     },
   ];
   return (
