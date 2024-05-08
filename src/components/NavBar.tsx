@@ -59,7 +59,7 @@ function NavBar() {
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <NavDropdown title="Publications" id="NavBarPublicationsDropdown" menuVariant="dark">
-              <NavDropdown.Item href="https://www.sosy-lab.org/research/btor2-cert/">
+              <NavDropdown.Item href="https://doi.org/10.1007/978-3-031-57256-2_7">
                 Btor2-Cert: A Certifying Hardware-Verification Framework Using Software Analyzers
               </NavDropdown.Item>
             </NavDropdown>
